@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "buildCommand": "turbo run build",
+  "devCommand": "turbo run dev",
+  "installCommand": "pnpm install",
+  "env": {
+    "NEXT_PUBLIC_API_URL": "@quickserve_api_url",
+    "NODE_ENV": "production"
+  },
+  "projects": [
+    {
+      "name": "web-admin",
+      "rootDirectory": "apps/web-admin"
+    },
+    {
+      "name": "web-consumer",
+      "rootDirectory": "apps/web-consumer"
+    },
+    {
+      "name": "web-vendor",
+      "rootDirectory": "apps/web-vendor"
+    },
+    {
+      "name": "web-rider",
+      "rootDirectory": "apps/web-rider"
+    }
+  ]
+}

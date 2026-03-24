@@ -1,0 +1,22 @@
+{
+  "name": "quickserve-web",
+  "version": "1.0.0",
+  "description": "QuickServe - React/Next.js Web Apps (Admin, Consumer, Vendor, Rider)",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "type-check": "turbo run type-check"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.12.0",
+    "prettier": "^3.1.0"
+  },
+  "packageManager": "pnpm@8.0.0"
+}
